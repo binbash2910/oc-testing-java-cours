@@ -42,7 +42,6 @@ public class CalculatorController {
 				calculation.getRightArgument());
 
 		final CalculationModel response = calculatorService.calculate(calculationModel);
-		System.out.println(response);
 
 		model.addAttribute("response", response);
 		return CALCULATOR_TEMPLATE; // cf. resources/templates/calculator.html
